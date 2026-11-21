@@ -1,0 +1,15 @@
+
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+uploads/
+generated/
+dataset/
+
+database/gallery.db
+.env
+
+.vscode/
+.DS_Store

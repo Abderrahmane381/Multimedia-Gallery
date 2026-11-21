@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Descripteurs de l'image</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <style>
+        body { background: #f5f6f8; }
+        .section-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 22px;
+        }
+        .color-swatch {
+            width: 55px;
+            height: 55px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .hist-row { margin-bottom: 12px; }
+        .hist-bar {
+            height: 13px;
+            background: #0d6efd;
+            border-radius: 5px;
+        }
+        .hist-track {
+            background: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .lbp-bar {
+            height: 9px;
+            background: #198754;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="{{ url_for('gallery.show_gallery') }}">
+        Multimedia Gallery
+    </a>
+    <a class="btn btn-outline-light"
+       href="{{ url_for('gallery.show_gallery') }}">
+        Retour à la galerie
+    </a>
+</nav>
+
+<div class="container py-4">
+
+    <h2 class="mb-4">Descripteurs visuels de l'image</h2>
+    
+    <div class="section-card">
+    <h5>Choisir le mode d'analyse</h5>
+
+    <a href="{{ url_for('descriptors.image_descriptors',
+                         image_id=image.id, mode='global') }}"
+       class="btn btn-primary">
+        Image globale
+    </a>
+
+    <a href="{{ url_for('descriptors.image_descriptors',
+                         image_id=image.id, mode='object') }}"
+       class="btn btn-success">
+        Objet sans arrière-plan
+    </a>
+
+    <a href="{{ url_for('descriptors.image_descriptors',
+                         image_id=image.id, mode='background') }}"
+       class="btn btn-warning">
+        Arrière-plan seul
+    </a>
+</div>
+
+    <div class="section-card">
+        <h5>Informations générales</h5>
+        <p><strong>Image :</strong>
+            {{ image.original_name or image.filename }}
+        </p>
+        <p><strong>Mode :</strong> {{ features.mode }}</p>
+        <p><strong>Pixels analysés (couleur) :</strong>
+            {{ features.color.analyzed_pixels }}
+        </p>
+        <p><strong>Pixels analysés (texture) :</strong>
+            {{ features.texture.analyzed_pixels }}
+        </p>
+    </div>
+
+    <!-- DESCRIPTEURS COULEUR -->
+    <div class="section-card">
+        <h3 class="mb-3">1. Descripteurs de couleur</h3>
+
+        <h5>Histogrammes HSV</h5>
+
+        {% for channel, values in features.color.histograms.items() %}
+            <h6 class="mt-3">Canal {{ channel }}</h6>
+
+            {% for value in values %}
+                <div class="hist-row">
+                    <div class="d-flex justify-content-between">
+                        <small>Bin {{ loop.index }}</small>
+                        <small>{{ "%.4f"|format(value) }}</small>
+                    </div>
+                    <div class="hist-track">
+                        <div class="hist-bar"
+                             style="width: {{ value * 100 }}%">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
+        <hr>
+
+        <h5>Moments statistiques HSV</h5>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Canal</th>
+                        <th>Moyenne</th>
+                        <th>Écart-type</th>
+                        <th>Asymétrie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for channel, values in features.color.moments.items() %}
+                    <tr>
+                        <td>{{ channel }}</td>
+                        <td>{{ "%.4f"|format(values.mean) }}</td>
+                        <td>{{ "%.4f"|format(values.std) }}</td>
+                        <td>{{ "%.4f"|format(values.skewness) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h5>Couleurs dominantes RGB</h5>
+
+        <div class="row">
+            {% for color in features.color.dominant_colors %}
+            <div class="col-6 col-md-2 text-center mb-3">
+                <div class="color-swatch mx-auto"
+                     style="background-color: rgb({{ color.rgb[0] }}, {{ color.rgb[1] }}, {{ color.rgb[2] }});">
+                </div>
+                <small class="d-block mt-2">
+                    RGB ({{ color.rgb|join(', ') }})
+                </small>
+                <strong>{{ color.percentage }}%</strong>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- DESCRIPTEURS TEXTURE -->
+    <div class="section-card">
+        <h3 class="mb-3">2. Descripteurs de texture</h3>
+
+        <h5>GLCM (Gray-Level Co-occurrence Matrix)</h5>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Propriété</th>
+                        <th>Moyenne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for name, values in features.texture.glcm.items() %}
+                    <tr>
+                        <td>{{ name }}</td>
+                        <td>{{ "%.6f"|format(values.mean) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h5>LBP (Local Binary Patterns)</h5>
+
+        <p>
+            Rayon : {{ features.texture.lbp.radius }} |
+            Points : {{ features.texture.lbp.points }} |
+            Pixels analysés : {{ features.texture.lbp_analyzed_pixels }}
+        </p>
+
+        <div class="row">
+            {% for value in features.texture.lbp.histogram %}
+            <div class="col-6 col-md-3 mb-2">
+                <small>Bin {{ loop.index }} :
+                    {{ "%.4f"|format(value) }}
+                </small>
+                <div class="hist-track">
+                    <div class="lbp-bar"
+                         style="width: {{ value * 100 }}%">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="text-center mb-4">
+        <a href="{{ url_for('gallery.show_gallery') }}"
+           class="btn btn-primary">
+            Retour à ma galerie
+        </a>
+    </div>
+
+</div>
+</body>
+</html>

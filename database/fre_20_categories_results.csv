@@ -1,0 +1,192 @@
+﻿category,query,feedback_count,classical_p10,classical_p25,individual_p10,individual_p25,fre_0.25_p10,fre_0.25_p25,fre_0.5_p10,fre_0.5_p25,fre_0.75_p10,fre_0.75_p25
+aircraft,dataset/GHIM-10K/aircraft/10_5043.jpg,14,0.5,0.56,0.7,0.4,0.8,0.64,0.8,0.72,0.7,0.76
+aircraft,dataset/GHIM-10K/aircraft/10_5381.jpg,3,0.1,0.12,0.3,0.16,0.1,0.08,0.1,0.08,0.1,0.16
+aircraft,dataset/GHIM-10K/aircraft/10_5323.jpg,10,0.6,0.4,0.5,0.44,0.6,0.56,0.6,0.6,0.7,0.64
+aircraft,dataset/GHIM-10K/aircraft/10_5217.jpg,6,0.2,0.24,0.2,0.12,0.8,0.6,0.7,0.56,0.6,0.56
+aircraft,dataset/GHIM-10K/aircraft/10_5215.jpg,2,0.1,0.08,0.1,0.04,0.3,0.36,0.3,0.36,0.3,0.36
+aircraft,dataset/GHIM-10K/aircraft/10_5048.jpg,4,0.1,0.16,0.2,0.16,0.3,0.24,0.3,0.24,0.3,0.24
+aircraft,dataset/GHIM-10K/aircraft/10_5101.jpg,5,0.2,0.2,0.4,0.36,0.1,0.28,0.1,0.28,0.1,0.32
+aircraft,dataset/GHIM-10K/aircraft/10_5426.jpg,4,0.2,0.16,0.2,0.2,0.1,0.28,0.0,0.28,0.0,0.24
+buildings,dataset/GHIM-10K/buildings/1_887.jpg,13,0.6,0.52,0.3,0.24,0.3,0.36,0.3,0.36,0.3,0.36
+buildings,dataset/GHIM-10K/buildings/1_700.jpg,7,0.3,0.28,0.0,0.16,0.4,0.28,0.4,0.24,0.4,0.2
+buildings,dataset/GHIM-10K/buildings/1_682.jpg,9,0.4,0.36,0.2,0.24,0.4,0.36,0.4,0.36,0.4,0.36
+buildings,dataset/GHIM-10K/buildings/1_820.jpg,7,0.1,0.28,0.3,0.28,0.5,0.36,0.5,0.36,0.5,0.36
+buildings,dataset/GHIM-10K/buildings/1_910.jpg,8,0.3,0.32,0.1,0.28,0.4,0.36,0.4,0.36,0.4,0.36
+buildings,dataset/GHIM-10K/buildings/1_590.jpg,9,0.4,0.36,0.4,0.2,0.6,0.52,0.6,0.52,0.7,0.52
+buildings,dataset/GHIM-10K/buildings/1_721.jpg,10,0.2,0.4,0.4,0.28,0.1,0.2,0.1,0.24,0.1,0.24
+buildings,dataset/GHIM-10K/buildings/1_746.jpg,14,0.6,0.56,0.2,0.12,0.2,0.2,0.2,0.12,0.2,0.16
+buildings,dataset/GHIM-10K/buildings/1_772.jpg,4,0.3,0.16,0.1,0.08,0.5,0.36,0.4,0.24,0.2,0.24
+buildings,dataset/GHIM-10K/buildings/1_958.jpg,8,0.2,0.32,0.2,0.2,0.3,0.32,0.3,0.28,0.3,0.28
+butterfly,dataset/GHIM-10K/butterfly/11_5847.jpg,9,0.5,0.36,0.3,0.32,0.4,0.4,0.4,0.4,0.4,0.44
+butterfly,dataset/GHIM-10K/butterfly/11_5875.jpg,1,0.0,0.04,0.3,0.32,0.2,0.36,0.2,0.36,0.2,0.36
+butterfly,dataset/GHIM-10K/butterfly/11_5636.jpg,17,0.7,0.68,0.4,0.4,0.8,0.6,0.8,0.64,0.8,0.64
+butterfly,dataset/GHIM-10K/butterfly/11_5723.jpg,10,0.5,0.4,0.2,0.12,0.3,0.28,0.4,0.36,0.3,0.24
+butterfly,dataset/GHIM-10K/butterfly/11_5676.jpg,7,0.3,0.28,0.0,0.16,0.6,0.4,0.7,0.4,0.5,0.4
+butterfly,dataset/GHIM-10K/butterfly/11_5582.jpg,6,0.5,0.24,0.1,0.12,0.1,0.08,0.0,0.04,0.0,0.0
+butterfly,dataset/GHIM-10K/butterfly/11_5811.jpg,6,0.5,0.24,0.2,0.32,0.2,0.16,0.2,0.16,0.2,0.16
+butterfly,dataset/GHIM-10K/butterfly/11_5947.jpg,11,0.4,0.44,0.7,0.4,0.4,0.4,0.4,0.4,0.3,0.4
+butterfly,dataset/GHIM-10K/butterfly/11_5984.jpg,2,0.1,0.08,0.5,0.28,0.0,0.0,0.0,0.0,0.0,0.0
+butterfly,dataset/GHIM-10K/butterfly/11_5534.jpg,2,0.0,0.08,0.5,0.4,0.7,0.6,0.6,0.56,0.6,0.44
+cars,dataset/GHIM-10K/cars/3_1981.jpg,9,0.2,0.36,0.4,0.36,0.3,0.28,0.3,0.28,0.2,0.28
+cars,dataset/GHIM-10K/cars/3_1705.jpg,17,0.9,0.68,0.2,0.12,0.6,0.4,0.4,0.28,0.5,0.24
+cars,dataset/GHIM-10K/cars/3_1869.jpg,2,0.0,0.08,0.0,0.0,0.4,0.24,0.3,0.2,0.3,0.24
+cars,dataset/GHIM-10K/cars/3_1663.jpg,2,0.0,0.08,0.0,0.04,0.1,0.04,0.1,0.08,0.2,0.08
+cars,dataset/GHIM-10K/cars/3_1837.jpg,11,0.7,0.44,0.1,0.08,0.0,0.12,0.1,0.12,0.1,0.2
+cars,dataset/GHIM-10K/cars/3_1866.jpg,8,0.4,0.32,0.2,0.2,0.5,0.28,0.5,0.28,0.3,0.2
+cars,dataset/GHIM-10K/cars/3_1682.jpg,15,0.8,0.6,0.1,0.2,0.4,0.24,0.2,0.2,0.1,0.08
+cars,dataset/GHIM-10K/cars/3_1576.jpg,8,0.3,0.32,0.2,0.28,0.3,0.32,0.3,0.32,0.3,0.32
+cars,dataset/GHIM-10K/cars/3_1956.jpg,15,0.7,0.6,0.3,0.12,0.3,0.48,0.5,0.4,0.3,0.32
+dragon fly,dataset/GHIM-10K/dragon fly/4_2351.jpg,11,0.5,0.44,0.2,0.24,0.5,0.28,0.5,0.32,0.4,0.28
+dragon fly,dataset/GHIM-10K/dragon fly/4_2415.jpg,9,0.4,0.36,0.3,0.16,0.4,0.36,0.4,0.32,0.4,0.32
+dragon fly,dataset/GHIM-10K/dragon fly/4_2112.jpg,6,0.3,0.24,0.4,0.24,0.1,0.28,0.1,0.28,0.1,0.28
+dragon fly,dataset/GHIM-10K/dragon fly/4_2331.jpg,13,0.5,0.52,0.0,0.04,0.1,0.12,0.1,0.12,0.2,0.12
+dragon fly,dataset/GHIM-10K/dragon fly/4_2466.jpg,10,0.5,0.4,0.1,0.08,0.2,0.28,0.2,0.36,0.3,0.32
+dragon fly,dataset/GHIM-10K/dragon fly/4_2315.jpg,17,0.9,0.68,0.6,0.24,0.2,0.4,0.2,0.28,0.3,0.24
+dragon fly,dataset/GHIM-10K/dragon fly/4_2217.jpg,7,0.3,0.28,0.1,0.04,0.4,0.36,0.4,0.36,0.4,0.32
+dragon fly,dataset/GHIM-10K/dragon fly/4_2080.jpg,2,0.2,0.08,0.1,0.28,0.2,0.2,0.2,0.2,0.2,0.2
+dragon fly,dataset/GHIM-10K/dragon fly/4_2279.jpg,11,0.7,0.44,0.5,0.24,0.5,0.44,0.5,0.32,0.4,0.32
+dragon fly,dataset/GHIM-10K/dragon fly/4_2163.jpg,1,0.0,0.04,0.0,0.0,0.1,0.04,0.1,0.04,0.1,0.04
+fireworks,dataset/GHIM-10K/fireworks/0_401.jpg,25,1.0,1.0,1.0,0.96,1.0,0.92,1.0,0.92,1.0,0.92
+fireworks,dataset/GHIM-10K/fireworks/0_226.jpg,21,1.0,0.84,0.9,0.8,1.0,0.88,1.0,0.88,1.0,0.92
+fireworks,dataset/GHIM-10K/fireworks/0_101.jpg,25,1.0,1.0,0.0,0.0,0.6,0.52,0.6,0.52,0.6,0.52
+fireworks,dataset/GHIM-10K/fireworks/0_189.jpg,22,0.9,0.88,0.7,0.68,0.6,0.76,0.6,0.68,0.6,0.68
+fireworks,dataset/GHIM-10K/fireworks/0_204.jpg,25,1.0,1.0,0.8,0.88,0.9,0.8,0.9,0.84,0.9,0.8
+fireworks,dataset/GHIM-10K/fireworks/0_161.jpg,16,0.8,0.64,1.0,0.76,0.5,0.32,0.4,0.28,0.3,0.2
+fireworks,dataset/GHIM-10K/fireworks/0_382.jpg,22,1.0,0.88,0.7,0.6,0.7,0.8,0.7,0.72,0.6,0.64
+fireworks,dataset/GHIM-10K/fireworks/0_458.jpg,9,0.3,0.36,0.1,0.2,0.2,0.08,0.1,0.12,0.2,0.16
+fireworks,dataset/GHIM-10K/fireworks/0_46.jpg,14,0.6,0.56,0.6,0.68,0.9,0.88,0.9,0.84,1.0,0.8
+flowers,dataset/GHIM-10K/flowers/6_3122.jpg,16,0.8,0.64,0.1,0.2,0.6,0.52,0.7,0.52,0.7,0.52
+flowers,dataset/GHIM-10K/flowers/6_3333.jpg,2,0.0,0.08,0.0,0.0,0.1,0.12,0.1,0.12,0.1,0.12
+flowers,dataset/GHIM-10K/flowers/6_3019.jpg,12,0.3,0.48,0.3,0.16,0.5,0.32,0.5,0.32,0.5,0.32
+flowers,dataset/GHIM-10K/flowers/6_3219.jpg,11,0.8,0.44,0.6,0.52,0.5,0.32,0.5,0.36,0.6,0.36
+flowers,dataset/GHIM-10K/flowers/6_3070.jpg,9,0.6,0.36,0.4,0.28,0.1,0.16,0.3,0.24,0.3,0.32
+flowers,dataset/GHIM-10K/flowers/6_3236.jpg,3,0.1,0.12,0.5,0.44,0.5,0.4,0.5,0.4,0.5,0.4
+flowers,dataset/GHIM-10K/flowers/6_3249.jpg,18,0.9,0.72,0.9,0.68,0.2,0.32,0.3,0.4,0.6,0.52
+flowers,dataset/GHIM-10K/flowers/6_3057.jpg,4,0.1,0.16,0.2,0.16,0.4,0.24,0.4,0.32,0.4,0.28
+flowers,dataset/GHIM-10K/flowers/6_3327.jpg,10,0.7,0.4,0.3,0.32,0.9,0.64,0.9,0.64,0.8,0.6
+hen,dataset/GHIM-10K/hen/17_8673.jpg,11,0.2,0.44,0.0,0.0,0.3,0.2,0.2,0.2,0.2,0.16
+hen,dataset/GHIM-10K/hen/17_8798.jpg,10,0.4,0.4,0.1,0.16,0.2,0.28,0.2,0.4,0.2,0.4
+hen,dataset/GHIM-10K/hen/17_8650.jpg,7,0.3,0.28,0.0,0.12,0.4,0.32,0.4,0.32,0.4,0.32
+hen,dataset/GHIM-10K/hen/17_8990.jpg,14,0.5,0.56,0.3,0.2,0.6,0.6,0.7,0.56,0.7,0.64
+hen,dataset/GHIM-10K/hen/17_8639.jpg,9,0.2,0.36,0.1,0.32,0.8,0.56,0.8,0.56,0.7,0.56
+hen,dataset/GHIM-10K/hen/17_8892.jpg,14,0.9,0.56,0.1,0.28,0.3,0.4,0.3,0.4,0.4,0.44
+hen,dataset/GHIM-10K/hen/17_8775.jpg,12,0.6,0.48,0.0,0.12,0.3,0.24,0.3,0.24,0.3,0.24
+hen,dataset/GHIM-10K/hen/17_8718.jpg,13,0.5,0.52,0.7,0.44,0.6,0.64,0.6,0.56,0.5,0.48
+hen,dataset/GHIM-10K/hen/17_8608.jpg,4,0.2,0.16,0.3,0.12,0.4,0.24,0.4,0.24,0.4,0.24
+hen,dataset/GHIM-10K/hen/17_8516.jpg,11,0.6,0.44,0.3,0.24,0.7,0.64,0.7,0.6,0.6,0.6
+horses,dataset/GHIM-10K/horses/19_9890.jpg,2,0.2,0.08,0.1,0.08,0.4,0.2,0.4,0.16,0.4,0.16
+horses,dataset/GHIM-10K/horses/19_9714.jpg,5,0.3,0.2,0.3,0.12,0.3,0.16,0.3,0.16,0.3,0.16
+horses,dataset/GHIM-10K/horses/19_9832.jpg,7,0.2,0.28,0.4,0.36,0.4,0.24,0.4,0.24,0.4,0.24
+horses,dataset/GHIM-10K/horses/19_9750.jpg,8,0.4,0.32,0.1,0.16,0.3,0.36,0.3,0.36,0.3,0.36
+horses,dataset/GHIM-10K/horses/19_9950.jpg,4,0.2,0.16,0.2,0.16,0.5,0.2,0.5,0.2,0.5,0.2
+horses,dataset/GHIM-10K/horses/19_9776.jpg,3,0.2,0.12,0.1,0.16,0.5,0.32,0.5,0.32,0.5,0.36
+horses,dataset/GHIM-10K/horses/19_9997.jpg,1,0.0,0.04,0.1,0.04,0.1,0.04,0.1,0.04,0.1,0.04
+horses,dataset/GHIM-10K/horses/19_9826.jpg,1,0.0,0.04,0.0,0.08,0.1,0.04,0.1,0.04,0.1,0.04
+horses,dataset/GHIM-10K/horses/19_9562.jpg,14,0.6,0.56,0.3,0.36,0.7,0.48,0.7,0.48,0.7,0.48
+insects,dataset/GHIM-10K/insects/18_9081.jpg,10,0.4,0.4,0.5,0.32,0.7,0.6,0.6,0.6,0.5,0.52
+insects,dataset/GHIM-10K/insects/18_9449.jpg,8,0.1,0.32,0.3,0.24,0.3,0.32,0.4,0.32,0.4,0.36
+insects,dataset/GHIM-10K/insects/18_9251.jpg,1,0.0,0.04,0.0,0.0,0.1,0.04,0.1,0.04,0.1,0.04
+insects,dataset/GHIM-10K/insects/18_9470.jpg,3,0.2,0.12,0.2,0.08,0.1,0.04,0.1,0.08,0.1,0.08
+insects,dataset/GHIM-10K/insects/18_9045.jpg,11,0.4,0.44,0.5,0.44,0.5,0.36,0.4,0.4,0.2,0.36
+insects,dataset/GHIM-10K/insects/18_9357.jpg,8,0.5,0.32,0.3,0.12,0.4,0.36,0.4,0.36,0.4,0.36
+insects,dataset/GHIM-10K/insects/18_9345.jpg,12,0.4,0.48,0.1,0.12,0.4,0.28,0.4,0.28,0.4,0.28
+insects,dataset/GHIM-10K/insects/18_9356.jpg,7,0.4,0.28,0.1,0.08,0.3,0.24,0.3,0.24,0.3,0.24
+insects,dataset/GHIM-10K/insects/18_9229.jpg,18,0.8,0.72,0.2,0.24,0.5,0.28,0.4,0.36,0.4,0.36
+insects,dataset/GHIM-10K/insects/18_9380.jpg,18,0.9,0.72,0.7,0.56,0.6,0.64,0.6,0.64,0.8,0.56
+motorcycles,dataset/GHIM-10K/motorcycles/14_7171.jpg,23,1.0,0.92,0.9,0.84,1.0,0.8,1.0,0.8,0.9,0.84
+motorcycles,dataset/GHIM-10K/motorcycles/14_7336.jpg,4,0.2,0.16,0.0,0.04,0.1,0.08,0.0,0.08,0.0,0.08
+motorcycles,dataset/GHIM-10K/motorcycles/14_7044.jpg,23,1.0,0.92,0.9,0.92,1.0,1.0,1.0,1.0,1.0,1.0
+motorcycles,dataset/GHIM-10K/motorcycles/14_7059.jpg,5,0.2,0.2,0.1,0.12,0.3,0.4,0.3,0.4,0.3,0.4
+motorcycles,dataset/GHIM-10K/motorcycles/14_7311.jpg,1,0.0,0.04,0.1,0.04,0.1,0.08,0.1,0.08,0.1,0.08
+motorcycles,dataset/GHIM-10K/motorcycles/14_7300.jpg,16,0.8,0.64,0.4,0.24,0.7,0.36,0.6,0.44,0.6,0.36
+motorcycles,dataset/GHIM-10K/motorcycles/14_7476.jpg,13,0.9,0.52,0.8,0.6,0.8,0.68,0.7,0.68,0.7,0.68
+motorcycles,dataset/GHIM-10K/motorcycles/14_7481.jpg,10,0.6,0.4,0.5,0.24,0.7,0.44,0.7,0.48,0.6,0.44
+motorcycles,dataset/GHIM-10K/motorcycles/14_7170.jpg,23,1.0,0.92,0.9,0.6,1.0,0.92,1.0,0.96,1.0,0.96
+motorcycles,dataset/GHIM-10K/motorcycles/14_7179.jpg,25,1.0,1.0,0.7,0.64,1.0,0.96,0.9,0.96,0.9,0.96
+mountains,dataset/GHIM-10K/mountains/5_2883.jpg,2,0.1,0.08,0.1,0.08,0.3,0.16,0.2,0.12,0.2,0.16
+mountains,dataset/GHIM-10K/mountains/5_2636.jpg,3,0.1,0.12,0.1,0.08,0.1,0.12,0.0,0.12,0.0,0.08
+mountains,dataset/GHIM-10K/mountains/5_2854.jpg,3,0.2,0.12,0.4,0.2,0.6,0.36,0.6,0.36,0.6,0.36
+mountains,dataset/GHIM-10K/mountains/5_2866.jpg,6,0.4,0.24,0.1,0.12,0.0,0.0,0.0,0.0,0.0,0.04
+mountains,dataset/GHIM-10K/mountains/5_2540.jpg,5,0.2,0.2,0.1,0.04,0.2,0.12,0.2,0.12,0.2,0.12
+mountains,dataset/GHIM-10K/mountains/5_2549.jpg,3,0.1,0.12,0.1,0.16,0.0,0.0,0.0,0.04,0.0,0.08
+mountains,dataset/GHIM-10K/mountains/5_2723.jpg,11,0.8,0.44,0.4,0.28,0.5,0.48,0.5,0.48,0.5,0.44
+mountains,dataset/GHIM-10K/mountains/5_2890.jpg,4,0.3,0.16,0.2,0.16,0.3,0.24,0.3,0.24,0.2,0.24
+mountains,dataset/GHIM-10K/mountains/5_2629.jpg,6,0.3,0.24,0.1,0.04,0.2,0.08,0.2,0.08,0.1,0.04
+mountains,dataset/GHIM-10K/mountains/5_2724.jpg,3,0.1,0.12,0.0,0.04,0.3,0.16,0.3,0.16,0.3,0.16
+sea shores,dataset/GHIM-10K/sea shores/9_4745.jpg,3,0.0,0.12,0.2,0.08,0.3,0.16,0.3,0.16,0.3,0.16
+sea shores,dataset/GHIM-10K/sea shores/9_4859.jpg,4,0.3,0.16,0.1,0.04,0.3,0.36,0.3,0.32,0.3,0.28
+sea shores,dataset/GHIM-10K/sea shores/9_4831.jpg,8,0.6,0.32,0.4,0.28,0.4,0.36,0.3,0.32,0.3,0.32
+sea shores,dataset/GHIM-10K/sea shores/9_4729.jpg,12,0.4,0.48,0.2,0.16,0.3,0.24,0.4,0.32,0.5,0.32
+sea shores,dataset/GHIM-10K/sea shores/9_4769.jpg,6,0.2,0.24,0.1,0.16,0.1,0.12,0.1,0.12,0.1,0.12
+sea shores,dataset/GHIM-10K/sea shores/9_4510.jpg,3,0.1,0.12,0.1,0.12,0.2,0.16,0.2,0.16,0.2,0.16
+sea shores,dataset/GHIM-10K/sea shores/9_4587.jpg,8,0.5,0.32,0.1,0.04,0.3,0.2,0.2,0.2,0.2,0.16
+sea shores,dataset/GHIM-10K/sea shores/9_4877.jpg,5,0.1,0.2,0.0,0.12,0.4,0.2,0.4,0.32,0.4,0.28
+sea shores,dataset/GHIM-10K/sea shores/9_4924.jpg,14,0.5,0.56,0.5,0.56,0.8,0.64,0.8,0.64,0.8,0.6
+ships,dataset/GHIM-10K/ships/16_8205.jpg,15,0.8,0.6,0.5,0.32,0.5,0.36,0.6,0.36,0.3,0.4
+ships,dataset/GHIM-10K/ships/16_8329.jpg,13,0.8,0.52,0.5,0.24,0.5,0.48,0.6,0.44,0.4,0.4
+ships,dataset/GHIM-10K/ships/16_8021.jpg,10,0.3,0.4,0.3,0.12,0.5,0.4,0.5,0.4,0.6,0.4
+ships,dataset/GHIM-10K/ships/16_8089.jpg,2,0.0,0.08,0.0,0.16,0.4,0.2,0.4,0.2,0.4,0.2
+ships,dataset/GHIM-10K/ships/16_8164.jpg,3,0.0,0.12,0.2,0.12,0.1,0.24,0.1,0.24,0.1,0.12
+ships,dataset/GHIM-10K/ships/16_8073.jpg,7,0.4,0.28,0.3,0.2,0.5,0.44,0.5,0.44,0.5,0.44
+ships,dataset/GHIM-10K/ships/16_8094.jpg,6,0.2,0.24,0.1,0.08,0.2,0.2,0.2,0.2,0.2,0.32
+ships,dataset/GHIM-10K/ships/16_8245.jpg,3,0.1,0.12,0.1,0.2,0.2,0.16,0.2,0.12,0.2,0.12
+ships,dataset/GHIM-10K/ships/16_8339.jpg,14,0.8,0.56,0.1,0.04,0.6,0.48,0.6,0.48,0.6,0.52
+ships,dataset/GHIM-10K/ships/16_8388.jpg,1,0.1,0.04,0.0,0.04,0.1,0.16,0.1,0.16,0.1,0.16
+sunset,dataset/GHIM-10K/sunset/13_6792.jpg,18,0.9,0.72,0.4,0.32,0.7,0.4,0.7,0.36,0.4,0.28
+sunset,dataset/GHIM-10K/sunset/13_6576.jpg,18,1.0,0.72,0.7,0.64,0.9,0.76,0.9,0.68,0.9,0.6
+sunset,dataset/GHIM-10K/sunset/13_6512.jpg,1,0.1,0.04,0.0,0.04,0.1,0.08,0.1,0.08,0.1,0.08
+sunset,dataset/GHIM-10K/sunset/13_6742.jpg,6,0.3,0.24,0.2,0.16,0.8,0.44,0.7,0.44,0.7,0.48
+sunset,dataset/GHIM-10K/sunset/13_6802.jpg,23,1.0,0.92,0.6,0.56,0.8,0.88,0.8,0.88,0.8,0.8
+sunset,dataset/GHIM-10K/sunset/13_6709.jpg,22,1.0,0.88,0.4,0.2,0.7,0.6,0.7,0.56,0.7,0.52
+sunset,dataset/GHIM-10K/sunset/13_6720.jpg,24,1.0,0.96,0.3,0.16,0.2,0.2,0.2,0.16,0.2,0.2
+sunset,dataset/GHIM-10K/sunset/13_6978.jpg,21,1.0,0.84,0.5,0.4,0.2,0.16,0.2,0.24,0.3,0.32
+sunset,dataset/GHIM-10K/sunset/13_6646.jpg,24,1.0,0.96,0.0,0.0,0.4,0.28,0.4,0.28,0.4,0.28
+temples,dataset/GHIM-10K/temples/12_6282.jpg,2,0.0,0.08,0.2,0.16,0.2,0.28,0.2,0.4,0.2,0.4
+temples,dataset/GHIM-10K/temples/12_6235.jpg,1,0.1,0.04,0.2,0.08,0.1,0.08,0.1,0.08,0.1,0.08
+temples,dataset/GHIM-10K/temples/12_6273.jpg,2,0.2,0.08,0.2,0.12,0.2,0.08,0.2,0.08,0.2,0.08
+temples,dataset/GHIM-10K/temples/12_6166.jpg,7,0.4,0.28,0.2,0.16,0.3,0.24,0.3,0.24,0.3,0.24
+temples,dataset/GHIM-10K/temples/12_6133.jpg,6,0.3,0.24,0.2,0.08,0.3,0.24,0.3,0.2,0.3,0.2
+temples,dataset/GHIM-10K/temples/12_6461.jpg,1,0.0,0.04,0.0,0.04,0.3,0.32,0.3,0.32,0.3,0.32
+temples,dataset/GHIM-10K/temples/12_6080.jpg,4,0.0,0.16,0.3,0.16,0.1,0.04,0.1,0.04,0.1,0.04
+temples,dataset/GHIM-10K/temples/12_6268.jpg,11,0.5,0.44,0.4,0.32,0.7,0.48,0.8,0.4,0.6,0.36
+temples,dataset/GHIM-10K/temples/12_6475.jpg,5,0.2,0.2,0.6,0.44,0.3,0.28,0.3,0.28,0.3,0.32
+temples,dataset/GHIM-10K/temples/12_6401.jpg,7,0.4,0.28,0.1,0.08,0.5,0.4,0.6,0.44,0.5,0.32
+trees,dataset/GHIM-10K/trees/7_3641.jpg,5,0.2,0.2,0.3,0.2,0.6,0.76,0.6,0.72,0.6,0.68
+trees,dataset/GHIM-10K/trees/7_3657.jpg,11,0.6,0.44,0.2,0.16,0.8,0.6,0.8,0.52,0.7,0.48
+trees,dataset/GHIM-10K/trees/7_3767.jpg,22,0.9,0.88,0.1,0.12,0.4,0.24,0.4,0.28,0.4,0.36
+trees,dataset/GHIM-10K/trees/7_3570.jpg,4,0.1,0.16,0.0,0.12,0.2,0.16,0.2,0.16,0.2,0.16
+trees,dataset/GHIM-10K/trees/7_3774.jpg,7,0.2,0.28,0.2,0.2,0.0,0.12,0.0,0.04,0.0,0.04
+trees,dataset/GHIM-10K/trees/7_3831.jpg,8,0.3,0.32,0.1,0.04,0.4,0.28,0.4,0.28,0.4,0.28
+trees,dataset/GHIM-10K/trees/7_3835.jpg,3,0.2,0.12,0.2,0.12,0.1,0.04,0.0,0.0,0.0,0.0
+trees,dataset/GHIM-10K/trees/7_3560.jpg,14,0.7,0.56,0.6,0.56,0.4,0.52,0.5,0.48,0.5,0.44
+trees,dataset/GHIM-10K/trees/7_3554.jpg,14,0.7,0.56,0.2,0.24,0.3,0.24,0.3,0.24,0.3,0.24
+trees,dataset/GHIM-10K/trees/7_3649.jpg,19,0.8,0.76,0.5,0.36,0.7,0.56,0.8,0.48,0.7,0.36
+valleys,dataset/GHIM-10K/valleys/8_4114.jpg,16,0.7,0.64,0.5,0.4,0.7,0.68,0.7,0.68,0.7,0.72
+valleys,dataset/GHIM-10K/valleys/8_4450.jpg,13,0.8,0.52,0.4,0.2,0.4,0.36,0.3,0.36,0.3,0.48
+valleys,dataset/GHIM-10K/valleys/8_4155.jpg,2,0.1,0.08,0.4,0.2,0.6,0.36,0.6,0.36,0.6,0.36
+valleys,dataset/GHIM-10K/valleys/8_4117.jpg,10,0.4,0.4,0.1,0.16,0.2,0.12,0.2,0.12,0.2,0.12
+valleys,dataset/GHIM-10K/valleys/8_4071.jpg,8,0.4,0.32,0.2,0.12,0.3,0.36,0.4,0.36,0.3,0.28
+valleys,dataset/GHIM-10K/valleys/8_4480.jpg,9,0.4,0.36,0.2,0.2,0.9,0.88,0.9,0.88,0.9,0.84
+valleys,dataset/GHIM-10K/valleys/8_4273.jpg,14,0.7,0.56,0.1,0.2,0.2,0.2,0.2,0.2,0.2,0.2
+valleys,dataset/GHIM-10K/valleys/8_4276.jpg,10,0.3,0.4,0.1,0.08,0.0,0.0,0.0,0.0,0.0,0.04
+valleys,dataset/GHIM-10K/valleys/8_4186.jpg,12,0.6,0.48,0.3,0.24,0.2,0.08,0.2,0.16,0.2,0.16
+walls,dataset/GHIM-10K/walls/2_1267.jpg,4,0.1,0.16,0.1,0.04,0.0,0.04,0.0,0.04,0.0,0.04
+walls,dataset/GHIM-10K/walls/2_1254.jpg,8,0.5,0.32,0.3,0.28,0.4,0.32,0.3,0.28,0.3,0.28
+walls,dataset/GHIM-10K/walls/2_1023.jpg,5,0.3,0.2,0.1,0.04,0.1,0.16,0.1,0.16,0.1,0.16
+walls,dataset/GHIM-10K/walls/2_1465.jpg,3,0.0,0.12,0.1,0.08,0.5,0.32,0.6,0.32,0.6,0.36
+walls,dataset/GHIM-10K/walls/2_1491.jpg,9,0.5,0.36,0.3,0.16,0.4,0.24,0.4,0.24,0.3,0.28
+walls,dataset/GHIM-10K/walls/2_1306.jpg,11,0.8,0.44,0.1,0.12,0.3,0.16,0.2,0.16,0.2,0.12
+walls,dataset/GHIM-10K/walls/2_1090.jpg,1,0.0,0.04,0.0,0.0,0.1,0.08,0.1,0.08,0.1,0.08
+walls,dataset/GHIM-10K/walls/2_1082.jpg,5,0.2,0.2,0.3,0.24,0.0,0.08,0.0,0.08,0.0,0.08
+walls,dataset/GHIM-10K/walls/2_1127.jpg,5,0.4,0.2,0.4,0.16,0.2,0.28,0.2,0.28,0.2,0.28
+walls,dataset/GHIM-10K/walls/2_1447.jpg,4,0.3,0.16,0.1,0.08,0.1,0.08,0.1,0.08,0.1,0.08
+yacht,dataset/GHIM-10K/yacht/15_7757.jpg,14,0.7,0.56,0.4,0.32,0.6,0.56,0.6,0.56,0.7,0.56
+yacht,dataset/GHIM-10K/yacht/15_7733.jpg,11,0.5,0.44,0.1,0.04,0.3,0.36,0.3,0.32,0.4,0.48
+yacht,dataset/GHIM-10K/yacht/15_7610.jpg,4,0.2,0.16,0.1,0.2,0.1,0.2,0.1,0.24,0.1,0.24
+yacht,dataset/GHIM-10K/yacht/15_7512.jpg,12,0.7,0.48,0.0,0.12,0.3,0.24,0.3,0.24,0.3,0.28
+yacht,dataset/GHIM-10K/yacht/15_7886.jpg,7,0.3,0.28,0.3,0.2,0.2,0.32,0.1,0.2,0.0,0.08
+yacht,dataset/GHIM-10K/yacht/15_7938.jpg,9,0.4,0.36,0.0,0.08,0.3,0.24,0.3,0.24,0.3,0.24
+yacht,dataset/GHIM-10K/yacht/15_7668.jpg,14,0.7,0.56,0.4,0.4,0.4,0.48,0.5,0.52,0.6,0.56
+yacht,dataset/GHIM-10K/yacht/15_7941.jpg,7,0.3,0.28,0.1,0.04,0.4,0.48,0.4,0.48,0.4,0.48
+yacht,dataset/GHIM-10K/yacht/15_7558.jpg,4,0.3,0.16,0.1,0.12,0.4,0.2,0.4,0.2,0.4,0.2
+yacht,dataset/GHIM-10K/yacht/15_7658.jpg,4,0.1,0.16,0.0,0.04,0.4,0.44,0.4,0.44,0.4,0.44

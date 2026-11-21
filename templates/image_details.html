@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transformation - Multimedia Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="{{ url_for('gallery.show_gallery') }}">
+        Multimedia Gallery
+    </a>
+    <a href="{{ url_for('auth.logout') }}" class="btn btn-outline-light btn-sm">
+        Déconnexion
+    </a>
+</nav>
+
+<div class="container mt-4 mb-5">
+
+    <a href="{{ url_for('gallery.show_gallery') }}" class="btn btn-secondary mb-3">
+        Retour à la galerie
+    </a>
+
+    <h2 class="mb-3">Transformation de l'image</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    <div class="card p-3 mb-4">
+        <h5>Image originale : {{ image.original_name }}</h5>
+        <img
+            src="{{ url_for('gallery.uploaded_file', filename=image.filename) }}"
+            class="img-fluid rounded"
+            style="max-height: 350px; object-fit: contain;"
+            alt="Image originale">
+    </div>
+
+    <div class="row">
+
+        <!-- Redimensionnement -->
+        <div class="col-md-6 mb-4">
+            <div class="card p-3 h-100">
+                <h4>Redimensionner</h4>
+                <p class="text-muted">Modifier la largeur et la hauteur en pixels.</p>
+
+                <form method="POST"
+                      action="{{ url_for('transformations.transform_image', image_id=image.id) }}">
+
+                    <input type="hidden" name="operation" value="resize">
+
+                    <div class="mb-3">
+                        <label class="form-label">Largeur (pixels)</label>
+                        <input type="number" name="width" class="form-control"
+                               min="1" max="5000" value="500" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Hauteur (pixels)</label>
+                        <input type="number" name="height" class="form-control"
+                               min="1" max="5000" value="500" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Redimensionner l'image
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Recadrage -->
+        <div class="col-md-6 mb-4">
+            <div class="card p-3 h-100">
+                <h4>Recadrer</h4>
+                <p class="text-muted">
+                    Définir une zone rectangulaire à conserver.
+                </p>
+
+                <form method="POST"
+                      action="{{ url_for('transformations.transform_image', image_id=image.id) }}">
+
+                    <input type="hidden" name="operation" value="crop">
+
+                    <div class="mb-3">
+                        <label class="form-label">Position X (pixels)</label>
+                        <input type="number" name="x" class="form-control"
+                               min="0" value="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Position Y (pixels)</label>
+                        <input type="number" name="y" class="form-control"
+                               min="0" value="0" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Largeur (pixels)</label>
+                        <input type="number" name="width" class="form-control"
+                               min="1" value="300" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Hauteur (pixels)</label>
+                        <input type="number" name="height" class="form-control"
+                               min="1" value="300" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Recadrer l'image
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    {% if result_url %}
+        <div class="card p-3 mb-4">
+            <h4>Résultat de la transformation</h4>
+
+            <img src="{{ result_url }}"
+                 class="img-fluid rounded mb-3"
+                 style="max-height: 400px; object-fit: contain;"
+                 alt="Image transformée">
+
+            <a href="{{ result_url }}"
+               download
+               class="btn btn-success">
+                Télécharger l'image transformée
+            </a>
+        </div>
+    {% endif %}
+
+</div>
+</body>
+</html>

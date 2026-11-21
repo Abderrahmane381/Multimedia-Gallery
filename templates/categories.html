@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catégories - Multimedia Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="{{ url_for('gallery.show_gallery') }}">
+        Multimedia Gallery
+    </a>
+    <div class="text-white">
+        {{ current_user.username }}
+        <a href="{{ url_for('auth.logout') }}" class="btn btn-outline-light btn-sm ms-3">
+            Déconnexion
+        </a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Gestion des catégories</h2>
+        <a href="{{ url_for('gallery.show_gallery') }}" class="btn btn-secondary">
+            Retour à la galerie
+        </a>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    <!-- Formulaire de création -->
+    <div class="card shadow-sm p-4 mb-4">
+        <h5 class="mb-3">Créer une catégorie</h5>
+
+        <form method="POST" action="{{ url_for('categories.create_category') }}">
+
+            <div class="mb-3">
+                <label class="form-label">Nom de la catégorie</label>
+                <input type="text" name="name" class="form-control"
+                       placeholder="Exemple : Université" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Catégorie parente</label>
+                <select name="parent_id" class="form-select">
+                    <option value="">Aucune (catégorie principale)</option>
+
+                    {% for category in categories %}
+                        <option value="{{ category.id }}">
+                            {{ category.name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Créer la catégorie
+            </button>
+        </form>
+    </div>
+
+    <!-- Liste des catégories -->
+    <div class="card shadow-sm p-4">
+        <h5 class="mb-3">Mes catégories</h5>
+
+        {% macro show_category(category, level=0) %}
+            <div class="border rounded p-3 mb-2 bg-white"
+                 style="margin-left: {{ level * 25 }}px;">
+
+                <strong>
+                    {% if level > 0 %}↳ {% endif %}
+                    {{ category.name }}
+                </strong>
+
+                <small class="text-muted ms-2">
+                    {{ category.images|length }} image(s)
+                </small>
+            </div>
+
+            {% for child in category.children %}
+                {{ show_category(child, level + 1) }}
+            {% endfor %}
+        {% endmacro %}
+
+        {% for category in categories %}
+            {% if not category.parent_id %}
+                {{ show_category(category) }}
+            {% endif %}
+        {% else %}
+            <p class="text-muted">Aucune catégorie créée pour le moment.</p>
+        {% endfor %}
+    </div>
+
+</div>
+</body>
+</html>

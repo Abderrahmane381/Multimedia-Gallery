@@ -1,0 +1,11 @@
+
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Flask-RESTful
+numpy
+Pillow
+opencv-python
+scikit-image
+scikit-learn
+scipy
